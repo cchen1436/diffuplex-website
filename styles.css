@@ -35,3 +35,7 @@ h1>.title-with{color:var(--ink)}.hero{padding-top:38px}.hero .eyebrow{margin-bot
 .hero-demo-heading{margin-bottom:20px}
 @media(max-width:600px){.hero-demo-heading h2{font-size:28px;letter-spacing:-.8px;line-height:1.15}.hero-demo-heading{margin-bottom:16px}}
 @media(max-width:360px){.hero-demo-heading h2{font-size:26px;letter-spacing:-.7px}}
+
+/* Give the project name a little more presence. */
+.hero>.eyebrow{font-size:15px;letter-spacing:2.8px}
+@media(max-width:600px){.hero>.eyebrow{font-size:13px;letter-spacing:2.5px}}
