@@ -55,6 +55,7 @@
       speed.hidden = true;
       sound.hidden = true;
       placeholder.hidden = false;
+      placeholder.querySelector('.placeholder-tag').textContent = 'Video unavailable. Please reload.';
     });
     speed.src = speed.dataset.src;
     speed.load();
