@@ -1,0 +1,125 @@
+{
+  "source": "Current author-confirmed paper results and supplied baseline measurements",
+  "method": "Baseline coordinates recovered from the vector PDF; rounded to its original one-decimal speed/score precision. Diffuplex values are the explicit figure annotations.",
+  "thinking_on": [
+    {
+      "model": "Diffuplex",
+      "score": 86.9,
+      "speed": 1872.0
+    },
+    {
+      "model": "BR-Voice",
+      "score": 90.46,
+      "speed": 327.3,
+      "precision": "BF16"
+    },
+    {
+      "model": "LFG-3",
+      "score": 89.9,
+      "speed": 74.0,
+      "precision": "BF16"
+    },
+    {
+      "model": "N3-Omni",
+      "score": 89.4,
+      "speed": 393.6,
+      "precision": "FP8"
+    },
+    {
+      "model": "Q3-Omni-T",
+      "score": 88.8,
+      "speed": 300.5,
+      "precision": "FP8"
+    },
+    {
+      "model": "LFG-1",
+      "score": 79.6,
+      "speed": 254.2,
+      "precision": "BF16"
+    },
+    {
+      "model": "Kimi",
+      "score": 76.9,
+      "speed": 293.3,
+      "precision": "BF16"
+    },
+    {
+      "model": "Baichuan-1.5",
+      "score": 71.3,
+      "speed": 281.3,
+      "precision": "BF16"
+    },
+    {
+      "model": "MiniCPM-o",
+      "score": 71.2,
+      "speed": 289.2,
+      "precision": "BF16"
+    },
+    {
+      "model": "Phi-4MM",
+      "score": 64.3,
+      "speed": 481.7,
+      "precision": "FP8"
+    },
+    {
+      "model": "GLM4-V",
+      "score": 56.5,
+      "speed": 214.0,
+      "precision": "BF16"
+    },
+    {
+      "model": "Qwen2-A",
+      "score": 55.8,
+      "speed": 344.2,
+      "precision": "FP8"
+    }
+  ],
+  "thinking_off": [
+    {
+      "model": "Diffuplex",
+      "score": 82.3,
+      "latency": 0.396
+    },
+    {
+      "model": "FLAIR",
+      "score": 60.0,
+      "latency": 0.33
+    },
+    {
+      "model": "Freeze-Omni",
+      "score": 55.2,
+      "latency": 0.953
+    },
+    {
+      "model": "Moshi",
+      "score": 29.5,
+      "latency": 0.265
+    },
+    {
+      "model": "PersonaPlex",
+      "score": 30.6,
+      "latency": 0.07
+    },
+    {
+      "model": "Nemotron-VC",
+      "score": 58.1,
+      "latency": 0.448
+    },
+    {
+      "model": "Lychee-FD",
+      "score": 43.5,
+      "latency": 0.84
+    },
+    {
+      "model": "SALM-Duplex",
+      "score": 39.0,
+      "latency": 0.55
+    }
+  ],
+  "stage2": {
+    "thinking": 86.9,
+    "nonthinking": 84.1,
+    "full_duplex": 82.3
+  },
+  "GB300_Diffuplex_statistic": "Average decode throughput: 1872 tokens/s, not peak throughput."
+}

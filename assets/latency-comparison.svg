@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 550" role="img" aria-labelledby="title desc">
+<title id="title">Full-duplex intelligence and first-audio latency</title>
+<desc id="desc">Diffuplex: 82.3 VoiceBench at 0.396 seconds. All seven full-duplex baselines are shown on linear axes starting at zero.</desc>
+<rect width="840" height="550" fill="white"/>
+<g font-family="Arial, sans-serif">
+<rect x="68" y="48" width="735" height="160.0" fill="#f5f8ee"/>
+<line x1="68.00" y1="448.00" x2="803.00" y2="448.00" stroke="#e7ebe2" stroke-width="1"/>
+<text x="54.00" y="455.00" font-size="19" fill="#67715f" text-anchor="end" font-weight="400">0</text>
+<line x1="68.00" y1="368.00" x2="803.00" y2="368.00" stroke="#e7ebe2" stroke-width="1"/>
+<text x="54.00" y="375.00" font-size="19" fill="#67715f" text-anchor="end" font-weight="400">20</text>
+<line x1="68.00" y1="288.00" x2="803.00" y2="288.00" stroke="#e7ebe2" stroke-width="1"/>
+<text x="54.00" y="295.00" font-size="19" fill="#67715f" text-anchor="end" font-weight="400">40</text>
+<line x1="68.00" y1="208.00" x2="803.00" y2="208.00" stroke="#e7ebe2" stroke-width="1"/>
+<text x="54.00" y="215.00" font-size="19" fill="#67715f" text-anchor="end" font-weight="400">60</text>
+<line x1="68.00" y1="128.00" x2="803.00" y2="128.00" stroke="#e7ebe2" stroke-width="1"/>
+<text x="54.00" y="135.00" font-size="19" fill="#67715f" text-anchor="end" font-weight="400">80</text>
+<line x1="68.00" y1="48.00" x2="803.00" y2="48.00" stroke="#e7ebe2" stroke-width="1"/>
+<text x="54.00" y="55.00" font-size="19" fill="#67715f" text-anchor="end" font-weight="400">100</text>
+<line x1="68.00" y1="448.00" x2="68.00" y2="455.00" stroke="#8b9384" stroke-width="1"/>
+<text x="68.00" y="479.00" font-size="19" fill="#67715f" text-anchor="middle" font-weight="400">0</text>
+<line x1="201.64" y1="448.00" x2="201.64" y2="455.00" stroke="#8b9384" stroke-width="1"/>
+<text x="201.64" y="479.00" font-size="19" fill="#67715f" text-anchor="middle" font-weight="400">0.2</text>
+<g transform="translate(-2.67 7.2)"><line x1="335.27" y1="448.00" x2="335.27" y2="455.00" stroke="#8b9384" stroke-width="1"/>
+<text x="335.27" y="479.00" font-size="19" fill="#67715f" text-anchor="middle" font-weight="400">0.4</text>
+<line x1="468.91" y1="448.00" x2="468.91" y2="455.00" stroke="#8b9384" stroke-width="1"/>
+<text x="468.91" y="479.00" font-size="19" fill="#67715f" text-anchor="middle" font-weight="400">0.6</text>
+<line x1="602.55" y1="448.00" x2="602.55" y2="455.00" stroke="#8b9384" stroke-width="1"/>
+<text x="602.55" y="479.00" font-size="19" fill="#67715f" text-anchor="middle" font-weight="400">0.8</text>
+<line x1="736.18" y1="448.00" x2="736.18" y2="455.00" stroke="#8b9384" stroke-width="1"/>
+<text x="736.18" y="479.00" font-size="19" fill="#67715f" text-anchor="middle" font-weight="400">1</text>
+<line x1="68.00" y1="48.00" x2="68.00" y2="440.80" stroke="#98a08f" stroke-width="1.5"/>
+<line x1="68.00" y1="448.00" x2="803.00" y2="440.80" stroke="#98a08f" stroke-width="1.5"/>
+<text x="68.00" y="25.00" font-size="21" fill="#2d3927" text-anchor="start" font-weight="500">Intelligence score (VoiceBench) ↑</text>
+<text x="435.50" y="520.00" font-size="21" fill="#485c35" text-anchor="middle" font-weight="400">← Faster     First-audio latency (s)</text>
+<circle cx="288.50" cy="208.00" r="8" fill="#9da7ad"><title>FLAIR: 60.0, 0.33 s</title></circle>
+<text x="272.50" y="190.00" font-size="20" fill="#626e74" text-anchor="end" font-weight="400">FLAIR</text>
+<circle cx="704.78" cy="227.20" r="8" fill="#9da7ad"><title>Freeze-Omni: 55.2, 0.953 s</title></circle>
+<text x="692.78" y="209.20" font-size="20" fill="#626e74" text-anchor="end" font-weight="400">Freeze-Omni</text>
+<circle cx="245.07" cy="330.00" r="8" fill="#9da7ad"><title>Moshi: 29.5, 0.265 s</title></circle>
+<text x="239.07" y="362.00" font-size="20" fill="#626e74" text-anchor="middle" font-weight="400">Moshi</text>
+<circle cx="114.77" cy="325.60" r="8" fill="#9da7ad"><title>PersonaPlex: 30.6, 0.07 s</title></circle>
+<text x="124.77" y="307.60" font-size="20" fill="#626e74" text-anchor="start" font-weight="400">PersonaPlex</text>
+<circle cx="367.35" cy="215.60" r="8" fill="#9da7ad"><title>Nemotron-VC: 58.1, 0.448 s</title></circle>
+<text x="385.35" y="244.60" font-size="20" fill="#626e74" text-anchor="start" font-weight="400">Nemotron-VC</text>
+<circle cx="629.27" cy="274.00" r="8" fill="#9da7ad"><title>Lychee-FD: 43.5, 0.84 s</title></circle>
+<text x="619.27" y="256.00" font-size="20" fill="#626e74" text-anchor="end" font-weight="400">Lychee-FD</text>
+<circle cx="435.50" cy="292.00" r="8" fill="#9da7ad"><title>SALM-Duplex: 39.0, 0.55 s</title></circle>
+<text x="451.50" y="322.00" font-size="20" fill="#626e74" text-anchor="start" font-weight="400">SALM-Duplex</text>
+<line x1="335.27" y1="131.60" x2="335.27" y2="440.80" stroke="#b7cd98" stroke-width="1.5" stroke-dasharray="5 6"/>
+<polygon points="335.27,90.60 341.15,103.51 355.24,105.11 344.78,114.69 347.62,128.59 335.27,121.60 322.93,128.59 325.76,114.69 315.30,105.11 329.39,103.51" fill="#78b928" stroke="#35630b" stroke-width="2.5"/>
+<text x="368.27" y="98.60" font-size="25" fill="#35630b" text-anchor="start" font-weight="700">Diffuplex</text>
+<text x="368.27" y="127.60" font-size="22" fill="#35630b" text-anchor="start" font-weight="600">82.3 · 0.396 s</text>
+</g></g></svg>
