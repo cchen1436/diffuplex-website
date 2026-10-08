@@ -39,3 +39,20 @@ h1>.title-with{color:var(--ink)}.hero{padding-top:38px}.hero .eyebrow{margin-bot
 /* Give the project name a little more presence. */
 .hero>.eyebrow{font-size:15px;letter-spacing:2.8px}
 @media(max-width:600px){.hero>.eyebrow{font-size:13px;letter-spacing:2.5px}}
+
+/* Resource placeholders and a click-to-play, audible demo. */
+.hero-links{display:flex;align-items:center;justify-content:center;gap:28px;margin:24px auto 22px}
+.resource-link{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;cursor:default}
+.resource-link img{display:block;width:32px;height:32px;object-fit:contain}
+.hero-links+.hero-demo{margin-top:0}
+.speed-media video{display:block}
+.speed-cover{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;cursor:pointer;background:linear-gradient(145deg,#fbfcfa,#f3f6ef);color:var(--ink)}
+.speed-cover-title{font-family:"Helvetica Neue",Arial,sans-serif;font-size:clamp(30px,4.8vw,54px);line-height:1.15;font-weight:600;letter-spacing:-1.6px}
+.speed-cover-title strong{color:var(--green);font-style:italic;font-weight:700}
+.speed-cover-play{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:white;border:1px solid #d9e0d2;color:var(--green);transition:transform .2s,box-shadow .2s}
+.speed-cover-play svg{width:24px;height:24px;fill:currentColor;margin-left:3px}
+.speed-cover:hover .speed-cover-play{transform:scale(1.06);box-shadow:0 4px 18px #35630b14}
+.speed-cover:focus-visible{outline:3px solid var(--green);outline-offset:-5px}
+.speed-status{margin:12px 0 0;font-size:13px;color:var(--muted)}
+@media(max-width:600px){.hero-links{gap:24px;margin:19px auto 20px}.resource-link img{width:29px;height:29px}.hero-links+.hero-demo{margin-top:0}.speed-cover{gap:18px}.speed-cover-title{font-size:clamp(28px,7vw,38px);letter-spacing:-.9px}.speed-cover-play{width:44px;height:44px}.speed-cover-play svg{width:20px;height:20px}}
+@media(prefers-reduced-motion:reduce){.speed-cover-play{transition:none}}

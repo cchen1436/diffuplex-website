@@ -35,31 +35,28 @@
   updatePlayback();
 
   const speed = document.getElementById('speed-video');
-  const placeholder = document.getElementById('speed-placeholder');
-  const sound = document.getElementById('speed-sound');
-  sound.addEventListener('click', () => {
-    speed.muted = false; speed.currentTime = 0;
-    speed.play().catch(() => {});
+  const cover = document.getElementById('speed-play');
+  const status = document.getElementById('speed-status');
+  speed.controls = false;
+  cover.addEventListener('click', () => {
+    // Keep play() inside the user gesture so mobile browsers allow sound.
+    speed.muted = false;
+    speed.volume = 1;
+    speed.controls = true;
+    status.hidden = true;
+    cover.hidden = true;
+    speed.play().then(() => speed.focus({preventScroll: true})).catch(() => {
+      cover.hidden = false;
+      speed.controls = false;
+      status.textContent = 'Unable to play the video. Please try again.';
+      status.hidden = false;
+    });
   });
-  if (speed.dataset.src.trim()) {
-    speed.addEventListener('loadeddata', () => {
-      placeholder.hidden = true;
-      speed.hidden = false;
-      sound.hidden = false;
-      speed.parentElement.setAttribute('aria-label', 'Diffuplex generation speed demo');
-      const status = document.querySelector('.coming-soon');
-      if (status) status.hidden = true;
-      if (!reducedMotion.matches) speed.play().catch(() => {});
-    });
-    speed.addEventListener('error', () => {
-      speed.hidden = true;
-      sound.hidden = true;
-      placeholder.hidden = false;
-      placeholder.querySelector('.placeholder-tag').textContent = 'Video unavailable. Please reload.';
-    });
-    speed.src = speed.dataset.src;
-    speed.load();
-  }
+  speed.addEventListener('error', () => {
+    cover.hidden = false;
+    status.textContent = 'Video unavailable. Please reload.';
+    status.hidden = false;
+  });
 })();
 
 const hardwareResults = [{"hardware": "GB300", "rows": [{"label": "Diffuplex", "tps": 1872, "precision": "ours"}, {"label": "Phi-4", "tps": 481.7, "precision": "FP8"}, {"label": "N3-Omni", "tps": 393.6, "precision": "FP8"}, {"label": "Qwen2-A", "tps": 344.2, "precision": "FP8"}, {"label": "BR-Voice", "tps": 327.3, "precision": "BF16"}, {"label": "Q3-Omni", "tps": 300.5, "precision": "FP8"}, {"label": "Kimi", "tps": 293.3, "precision": "BF16"}, {"label": "MiniCPM-o", "tps": 289.2, "precision": "BF16"}, {"label": "Baichuan-1.5", "tps": 281.3, "precision": "BF16"}, {"label": "LFG-1", "tps": 254.2, "precision": "BF16"}, {"label": "GLM4-V", "tps": 214, "precision": "BF16"}, {"label": "DIFFA-2", "tps": 101, "precision": "BF16"}, {"label": "LFG-3", "tps": 74, "precision": "BF16"}]}, {"hardware": "H100", "rows": [{"label": "Diffuplex", "tps": 1045, "precision": "ours"}, {"label": "Phi-4", "tps": 343.7, "precision": "FP8"}, {"label": "N3-Omni", "tps": 332.7, "precision": "FP8"}, {"label": "Qwen2-A", "tps": 228.4, "precision": "FP8"}, {"label": "MiniCPM-o 4.5", "tps": 218, "precision": "FP8"}, {"label": "BR-Voice", "tps": 206.7, "precision": "BF16"}, {"label": "Q3-Omni", "tps": 206.5, "precision": "BF16"}, {"label": "LFG-1", "tps": 204.4, "precision": "BF16"}, {"label": "Kimi", "tps": 173.2, "precision": "BF16"}, {"label": "MiniCPM-o 2.6", "tps": 167.2, "precision": "BF16"}, {"label": "Baichuan-1.5", "tps": 165.6, "precision": "BF16"}, {"label": "GLM4-V", "tps": 134.5, "precision": "BF16"}, {"label": "LFG-3", "tps": 41.7, "precision": "BF16"}]}, {"hardware": "RTX 6000", "rows": [{"label": "Diffuplex", "tps": 473.2, "precision": "ours"}, {"label": "N3-Omni", "tps": 192, "precision": "BF16"}, {"label": "Q3-Omni", "tps": 147, "precision": "BF16"}, {"label": "Phi-4", "tps": 105, "precision": "BF16"}, {"label": "Qwen2-A", "tps": 100, "precision": "BF16"}, {"label": "Kimi", "tps": 96, "precision": "BF16"}, {"label": "GLM4-V", "tps": 78, "precision": "BF16"}, {"label": "DIFFA-2", "tps": 31, "precision": "BF16"}, {"label": "LFG-3", "tps": 17, "precision": "BF16"}]}];
