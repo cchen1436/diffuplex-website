@@ -69,12 +69,12 @@ h1>.title-with{color:var(--ink)}.hero{padding-top:38px}.hero .eyebrow{margin-bot
 @media(max-width:360px){.header-inner{column-gap:12px}.header-inner>.brand{font-size:17px;gap:8px}.header-resources{gap:16px}}
 
 /* Let the four results introduce the demonstration. */
-.hero-stats{max-width:880px;margin:30px auto 0;padding:16px 10px;border-radius:14px}
+.hero-stats{max-width:880px;margin:46px auto 0;padding:16px 10px;border-radius:14px}
 .hero-stats strong{font-size:34px;letter-spacing:-1px}
 .hero-stats strong span{font-size:18px}
 .hero-stats>div{gap:6px}
 .hero-stats+.hero-demo{margin-top:26px}
-@media(max-width:600px){.hero-stats{margin-top:24px;padding:14px 8px;row-gap:16px}.hero-stats strong{font-size:28px}.hero-stats strong span{font-size:16px}.hero-stats+.hero-demo{margin-top:22px}}
+@media(max-width:600px){.hero-stats{margin-top:36px;padding:14px 8px;row-gap:16px}.hero-stats strong{font-size:28px}.hero-stats strong span{font-size:16px}.hero-stats+.hero-demo{margin-top:22px}}
 
 .quality-score{white-space:nowrap}
 
