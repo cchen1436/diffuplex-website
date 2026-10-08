@@ -59,16 +59,23 @@ h1>.title-with{color:var(--ink)}.hero{padding-top:38px}.hero .eyebrow{margin-bot
 
 /* Keep the four resource icons beside the wordmark in the top bar. */
 .header-inner>.brand{flex-shrink:0}
-.header-resources{display:flex;align-items:center;gap:12px;margin-right:auto}
+.header-resources{display:flex;align-items:center;gap:26px;margin:0 auto}
 .header-resources .resource-link{width:34px;height:40px}
 .header-resources .resource-link img{width:25px;height:25px}
 .hero{padding-top:48px}
 .hero-demo{margin-top:34px}
-@media(max-width:760px){.header-inner{flex-wrap:wrap;column-gap:16px;row-gap:0;padding:8px 16px}.header-resources{gap:8px}.header-resources .resource-link{width:30px;height:36px}.header-resources .resource-link img{width:24px;height:24px}.header-inner nav{flex-basis:100%;justify-content:center;gap:24px;font-size:11px}.header-inner nav a{padding:7px 0 9px}.header-inner nav a[href="#speed"]{display:inline-block}}
+@media(max-width:760px){.header-inner{flex-wrap:wrap;column-gap:16px;row-gap:0;padding:8px 16px}.header-resources{gap:16px;margin-left:auto;margin-right:0}.header-resources .resource-link{width:30px;height:36px}.header-resources .resource-link img{width:24px;height:24px}.header-inner nav{flex-basis:100%;justify-content:center;gap:24px;font-size:11px}.header-inner nav a{padding:7px 0 9px}.header-inner nav a[href="#speed"]{display:inline-block}}
 @media(max-width:600px){.hero{padding-top:32px}.hero-demo{margin-top:26px}}
-@media(max-width:360px){.header-inner{column-gap:12px}.header-inner>.brand{font-size:17px;gap:8px}.header-resources{gap:6px}}
+@media(max-width:360px){.header-inner{column-gap:12px}.header-inner>.brand{font-size:17px;gap:8px}.header-resources{gap:16px}}
 
 /* Let the four results introduce the demonstration. */
-.hero-stats{max-width:880px;margin:30px auto 0;padding:22px 10px}
+.hero-stats{max-width:840px;margin:30px auto 0;padding:16px 10px;border-radius:14px}
+.hero-stats strong{font-size:34px;letter-spacing:-1px}
+.hero-stats strong span{font-size:18px}
+.hero-stats>div{gap:6px}
 .hero-stats+.hero-demo{margin-top:26px}
-@media(max-width:600px){.hero-stats{margin-top:24px;padding:17px 8px;row-gap:20px}.hero-stats+.hero-demo{margin-top:22px}}
+@media(max-width:600px){.hero-stats{margin-top:24px;padding:14px 8px;row-gap:16px}.hero-stats strong{font-size:28px}.hero-stats strong span{font-size:16px}.hero-stats+.hero-demo{margin-top:22px}}
+
+.quality-values,.quality-labels{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+.quality-labels small{white-space:nowrap}
+@media(max-width:600px){.quality-values,.quality-labels{gap:6px}}
